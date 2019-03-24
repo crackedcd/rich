@@ -1,3 +1,5 @@
+> 机器学习是"统计学"实现人工智能的一种途径.
+
 ### 1. 数据集使用 
 > test1/loadData
 
@@ -41,5 +43,21 @@
 > test9/titanicTest2
 
 ### 7. 回归
+#### 7.1 线性回归
+> test10/regressionTest
+#### 7.2 岭回归
+> test11/ridgeTest
 
 ### 8. 聚类
+#### 8.1 逻辑回归
+> test12/classificationTest
+#### 8.2 精确率 召回率 F1-score
+> test13/trueConditionTest
+#### 8.3 ROC 与 AUC
+> test14/balanceTest
+#### 8.4 模型保存与加载
+> test15/modelSaveLoad
+
+### 9. 无监督学习
+#### 9.1 KMeans 轮廓系数
+> test16/clusterTest

@@ -38,6 +38,8 @@ def main():
     print(data.shape)
     pca = PCA(n_components=0.95)
     # 一旦data稍大, 这里的.toarray()必然内存不够, 使用SVD代替
+    # TruncatedSVD 类似于 PCA, 但tsvd可以使用scipy.sparse稀疏矩阵, 不需要还原成标准矩阵
+    # 类似 data_tsvd = tsvd.fit_transform(data)
     data_pca = pca.fit_transform(data.toarray())
     print(data_pca)
     print(data_pca.shape)
