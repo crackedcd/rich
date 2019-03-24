@@ -1,1 +1,1 @@
-learn ml.
+get rich.
