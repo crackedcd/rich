@@ -25,12 +25,12 @@
 > test3/csv2matrix
 
 ### 5. 转换和预估
-#### 5.1 iris 距离
+#### 5.1 距离
 > test4/irisTest
-#### 5.2 iris 交叉验证和网格搜索
+#### 5.2 交叉验证和网格搜索
 > test4/irisTest2
 #### 5.3 demo
-> test5
+> test5/gridSearchTest
 #### 5.4 朴素贝叶斯
 > test6/nativeBayesTest
 
