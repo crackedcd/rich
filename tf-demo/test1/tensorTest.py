@@ -17,6 +17,9 @@ tf.float32  tf.int32 ...
 
 准备 -> 前传 -> 反传 -> 迭代
 
+神经元 neuron
+在NN neural network中, 一个节点被称作一个neuron
+
 计算图 graph
 搭建神经网络的计算过程, 只搭建, 不运算
 

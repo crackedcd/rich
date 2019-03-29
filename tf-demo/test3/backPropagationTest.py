@@ -26,17 +26,17 @@ train_step = tf.train.AdamOptimizer(learning_rate).minimize(loss)
 
 import tensorflow as tf
 import numpy as np
-# 训练次数
-STEPS = 3000
-# 每次喂入数据数量
-BATCH_SIZE = 8
-# 随机种子
-SEED = 23455
 
 
 def back_propagation_test():
+    # 训练次数
+    steps = 3000
+    # 每次喂入数据数量
+    batch_size = 8
+    # 随机种子
+    seed = 8731
     # 基于seed产生随机数
-    rng = np.random.RandomState(SEED)
+    rng = np.random.RandomState(seed)
     # 生成32组重量和体积作为输入数据集, 32行2列的矩阵
     mat_x = rng.rand(32, 2)
     mat_y = []
@@ -75,10 +75,10 @@ def back_propagation_test():
         print(sess.run(w1))
         print(sess.run(w2))
 
-        for i in range(STEPS):
+        for i in range(steps):
             # 数据集只有32个(行), 所以对32取余, 让start在数据集范围内, i * batch_size让每次训练跨度batch_size个数据
-            start = (i * BATCH_SIZE) % 32
-            end = start + BATCH_SIZE
+            start = (i * batch_size) % 32
+            end = start + batch_size
             feeds = {
                 x: mat_x[start:end],
                 y_: mat_y[start:end]
